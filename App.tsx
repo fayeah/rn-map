@@ -4,10 +4,13 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <React.Fragment>
+      <Text>Some text.</Text>
+      <Text>A heading</Text>
+      <Text>More text.</Text>
+      <Text>Another heading</Text>
+      <Text>Even more text.</Text>
+    </React.Fragment>
   );
 }
 
