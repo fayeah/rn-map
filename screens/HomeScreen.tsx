@@ -1,12 +1,17 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, Button } from "react-native";
+import { StyleSheet, View, Button } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 const Stack = createStackNavigator();
 
 export default function HomeScreen({navigation}) {
-  return <Button title="Home screen" onPress={() => navigation.navigate('Profile', { name: 'Jane' })}></Button>;
+  return <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+  <Button
+    title="Go to Help"
+    onPress={() => navigation.navigate('Help')}
+  />
+</View>;
 }
 
 const styles = StyleSheet.create({

@@ -15,6 +15,7 @@
   但不影响启动应用。
 - navigation： `npm install @react-navigation/native @react-navigation/stack`,同时需要安装peerDenpendency `expo install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 `
+- tabs: `npm install @react-navigation/bottom-tabs`
 
   Note:
   - zsh找不到expo
@@ -36,4 +37,6 @@
   1. 当project的dependency A1跟dependency B的dependency A2一致但version不一样的时候，如果dependency的dependency的接口被暴露，很有可能跟外部的dependency产生冲突
   2. library需要peerDependencies，并且该library会被其他project使用
   3. npm install的时候不会自动安装
+
+- 已经安装好的dependency比如`react-native-gesture-handler`，当重新run`yarn ios`的时候又找不到该依赖，目前猜测是因为npm和yarn的冲突，`expo install`使用的是yanr add。
   
